@@ -42,7 +42,7 @@ function sessionPage(id){
 const s=sessions.find(x=>x.id===id); if(!s){home();return}
 document.title='جلسه '+id+' | '+s.title;
 document.getElementById("app").innerHTML=header()+
-'<main><section class="session"><div class="wrap"><div class="crumb"><a href="?">داشبورد جلسات</a> ← جلسه '+id+'</div><div class="box"><span class="tag" style="background:rgba(255,255,255,.13);color:#fff">جلسه '+id+(id===0?' | پیش‌نیاز کاربردی':' از ۱۰')</span><h1>'+s.title+'</h1><p>'+s.desc+'</p><div class="meta"><span>مدت پایه: ۲ ساعت</span><span>نسخه فعلی: Overview</span><span>قابل توسعه در مرحله بعد</span></div></div>'+
+'<main><section class="session"><div class="wrap"><div class="crumb"><a href="?">داشبورد جلسات</a> ← جلسه '+id+'</div><div class="box"><span class="tag" style="background:rgba(255,255,255,.13);color:#fff">جلسه '+id+(id===0?' | پیش‌نیاز کاربردی':' از ۱۰')+'</span><h1>'+s.title+'</h1><p>'+s.desc+'</p><div class="meta"><span>مدت پایه: ۲ ساعت</span><span>نسخه فعلی: Overview</span><span>قابل توسعه در مرحله بعد</span></div></div>'+
 '<div class="content">'+
 '<section class="panel"><h2>هدف کلی جلسه</h2><p>'+s.goal+'</p></section>'+
 '<section class="panel"><h2>محورهای اصلی</h2><ul>'+s.outline.map(i=>'<li>'+i+'</li>').join('')+'</ul></section>'+
