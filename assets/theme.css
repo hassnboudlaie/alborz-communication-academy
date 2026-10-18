@@ -1,6 +1,6 @@
 /* Visual refresh only. The course data, routes, templates and controls are unchanged.
    Brand emblem: https://bimealborz.co/wp-content/uploads/2024/04/لوگو-بیمه-البرز-2.png
-   Homepage image: Nima Nourollahi, from a May 2026 report of his CEO appointment on petrochemiha.ir.
+   Temporary neutral company logo while the correct CEO image is supplied as a file.
    Removed the old company collage to avoid displaying an outdated executive portrait.
    Vazirmatn is distributed under the SIL Open Font License; see fonts/OFL.txt. */
 
@@ -113,7 +113,7 @@ p { margin-block: 0 16px; }
   border-radius: 24px;
   border: 7px solid #fff;
   background-color: #e5eee7;
-  background-image: url("https://petrochemiha.ir/wp-content/uploads/2026/05/%D9%86%DB%8C%D9%85%D8%A7-%D9%86%D9%88%D8%B1%D8%A7%D9%84%D9%87%DB%8C-510x355.jpg");
+  background-image: url("alborz-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
