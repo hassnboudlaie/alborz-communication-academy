@@ -1,8 +1,7 @@
 /* Visual refresh only. The course data, routes, templates and controls are unchanged.
    Brand emblem: https://bimealborz.co/wp-content/uploads/2024/04/لوگو-بیمه-البرز-2.png
-   Company collage: existing Alborz Insurance visual, with the lower-right portrait updated
-   to Dr. Nima Nourollahi, current CEO, using an Alborz Insurance LinkedIn-published image.
-   The visual is decorative and does not depict this academy's workshop.
+   Homepage portrait: Dr. Nima Nourollahi from Alborz Insurance's LinkedIn publication.
+   Removed the old company collage to avoid displaying an outdated executive portrait.
    Vazirmatn is distributed under the SIL Open Font License; see fonts/OFL.txt. */
 
 @font-face {
@@ -114,12 +113,10 @@ p { margin-block: 0 16px; }
   border-radius: 24px;
   border: 7px solid #fff;
   background-color: #e5eee7;
-  background-image:
-    url("https://media.licdn.com/dms/image/v2/D4E22AQFCUFjwxcWS9A/feedshare-shrink_800/B4EZnWroS4HcAg-/0/1760243385942?e=2147483647&t=iLSk6fbtL650G9cta_pQ0LFIZHjavVDg7Ecrv3wC55A&v=beta"),
-    url("alborz-company.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right bottom, center;
-  background-size: 50% 50%, cover;
+  background-image: url("https://media.licdn.com/dms/image/v2/D4E22AQFCUFjwxcWS9A/feedshare-shrink_800/B4EZnWroS4HcAg-/0/1760243385942?e=2147483647&t=iLSk6fbtL650G9cta_pQ0LFIZHjavVDg7Ecrv3wC55A&v=beta");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   box-shadow: 0 16px 38px rgb(16 62 45 / 13%);
 }
 .hero h1 {
@@ -310,7 +307,7 @@ p { margin-block: 0 16px; }
   .utility-btn { padding-inline: 10px; }
   .hero { padding-block: 36px 28px; }
   .hero:has(.summary) .wrap { display: block; }
-  .hero:has(.summary) .wrap::after { width: 100%; max-width: 460px; aspect-ratio: 2.1; margin-block-start: 24px; margin-inline: auto; background-size: 50% 50%, 100% auto; background-position: right bottom, center top; background-repeat: no-repeat, no-repeat; border-width: 5px; }
+  .hero:has(.summary) .wrap::after { width: 100%; max-width: 460px; aspect-ratio: 2.1; margin-block-start: 24px; margin-inline: auto; background-size: contain; background-position: center; background-repeat: no-repeat; border-width: 5px; }
   .hero h1 { font-size: 35px; line-height: 1.65; }
   .grid, .content, .lab-grid { grid-template-columns: minmax(0, 1fr); }
   .ai-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
