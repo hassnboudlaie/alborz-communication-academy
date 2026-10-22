@@ -14,6 +14,37 @@
 </style>
 <link rel="preload" href="assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/theme.css?v=20261018-2">
+<style id="session1-dashboard-theme">
+.s1-shell{max-width:1380px;margin:0 auto;padding:24px 26px 50px;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:24px;direction:ltr}
+.s1-main,.s1-side{direction:rtl}.s1-side{position:sticky;top:105px;align-self:start;background:linear-gradient(180deg,#0b4d39,#073c32);border-radius:24px;padding:14px;box-shadow:0 18px 40px rgba(7,60,50,.18);max-height:calc(100vh - 130px);overflow:auto}
+.s1-side-title{color:#fff;font-size:14px;font-weight:800;padding:8px 10px 14px;border-bottom:1px solid rgba(255,255,255,.17);margin-bottom:8px}
+.s1-nav-btn{width:100%;border:0;background:transparent;color:#e9fff3;border-radius:14px;padding:12px 12px;margin:4px 0;display:flex;align-items:center;gap:11px;text-align:right;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:.2s}
+.s1-nav-btn .ico{width:34px;height:34px;display:grid;place-items:center;background:rgba(255,255,255,.13);border-radius:10px;font-size:19px;flex:0 0 34px}
+.s1-nav-btn:hover,.s1-nav-btn.active{background:#fff;color:#0b4d39;transform:translateX(-2px)}.s1-nav-btn.active .ico{background:#e7f6ec}
+.s1-hero{background:radial-gradient(circle at 15% 20%,rgba(255,255,255,.16),transparent 28%),linear-gradient(135deg,#0d5e45,#0a4638 64%,#123e35);border-radius:28px;padding:34px;color:#fff;position:relative;overflow:hidden;box-shadow:0 16px 38px rgba(11,77,57,.18);margin-bottom:22px}
+.s1-hero:after{content:"💬";position:absolute;left:28px;bottom:-20px;font-size:118px;opacity:.09;transform:rotate(-8deg)}
+.s1-eyebrow{display:inline-flex;gap:7px;align-items:center;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.23);padding:6px 12px;border-radius:999px;font-size:15px;font-weight:800}
+.s1-hero h1{font-size:38px;line-height:1.55;margin:14px 0 10px;color:#fff}.s1-hero p{font-size:21px;line-height:2;margin:0;max-width:940px;color:#edf9f2}
+.s1-meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.s1-meta span{background:rgba(255,255,255,.12);padding:7px 11px;border-radius:10px;font-size:15px}
+.s1-panel{background:#fff;border:1px solid #d9e6dc;border-radius:24px;padding:28px;box-shadow:0 8px 26px rgba(16,62,45,.06);min-height:560px}
+.s1-panel-head{display:flex;align-items:center;gap:14px;border-bottom:1px solid #e0ebe3;padding-bottom:18px;margin-bottom:22px}.s1-panel-head .bigico{font-size:34px;width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,#e7f5eb,#f7fbf8)}
+.s1-panel-head h2{font-size:30px;color:#143f32;margin:0}.s1-panel-head p{font-size:17px;color:#647a6d;margin:2px 0 0}
+.s1-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.s1-card{border:1px solid #dbe8df;background:linear-gradient(145deg,#fff,#f7fbf8);border-radius:18px;padding:20px;position:relative;overflow:hidden}.s1-card h3{font-size:22px;color:#174d3c;margin:0 0 8px}.s1-card p,.s1-card li{font-size:18px;line-height:1.95}.s1-card .mini-emoji{font-size:28px;display:block;margin-bottom:8px}
+.s1-accent{border-right:5px solid #c0a35a}.s1-question{font-size:24px;font-weight:900;line-height:1.9;color:#173f34;background:#eff8f1;border:1px solid #d0e7d5;padding:20px;border-radius:18px}
+.s1-callout{background:#fff8e7;border:1px solid #ead9a9;border-radius:18px;padding:18px 20px;font-size:19px;line-height:2;margin:16px 0}.s1-callout b{color:#735b1d}
+.s1-test-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.s1-target{background:#eef7f0;border:1px solid #d3e7d7;border-radius:18px;padding:18px}.s1-target label{font-size:16px;font-weight:800;color:#315b49;display:block;margin-bottom:8px}.s1-target select{width:100%;font:inherit;font-size:17px;padding:11px;border-radius:12px;border:1px solid #bfd6c5;background:#fff}
+.s1-q{border:1px solid #dde9e1;border-radius:16px;padding:17px;margin:12px 0;background:#fff}.s1-q-title{font-size:18px;font-weight:700;line-height:1.9;margin-bottom:10px}.s1-scale{display:flex;gap:7px;flex-wrap:wrap}.s1-scale label{cursor:pointer;border:1px solid #cbded0;border-radius:10px;padding:7px 11px;background:#f9fcfa;font-size:15px}.s1-scale input{margin-left:4px}
+.s1-submit{border:0;background:linear-gradient(135deg,#0d6d4b,#0a503c);color:#fff;border-radius:14px;padding:12px 22px;font:inherit;font-size:18px;font-weight:800;cursor:pointer;margin-top:10px}
+.s1-result{display:none;margin-top:22px}.s1-result.show{display:block}.s1-scores{display:grid;grid-template-columns:1fr 1fr;gap:12px}.s1-score{background:#f4faf6;border:1px solid #d4e6d8;border-radius:16px;padding:16px;text-align:center}.s1-score b{display:block;font-size:28px;color:#0c6044}.s1-score span{font-size:15px}
+.s1-matrix{margin-top:16px;position:relative;height:360px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border:2px solid #1b5a43;border-radius:20px;overflow:hidden;background:#fff}.s1-cell{padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1.8}.s1-cell b{font-size:19px}.s1-cell:nth-child(1){background:#eef8ef}.s1-cell:nth-child(2){background:#f1f8f4}.s1-cell:nth-child(3){background:#fff8eb}.s1-cell:nth-child(4){background:#f7f3ef}.s1-dot{position:absolute;width:24px;height:24px;background:#d44432;border:4px solid #fff;border-radius:50%;box-shadow:0 3px 12px rgba(0,0,0,.25);transform:translate(50%,50%);transition:.35s}.s1-axis-x,.s1-axis-y{font-size:13px;color:#566b60;font-weight:800}.s1-axis-x{text-align:center;margin-top:6px}.s1-axis-y{position:absolute;right:-90px;top:50%;transform:rotate(-90deg)}
+.s1-case{border:1px solid #d9e7dd;border-radius:18px;padding:20px;margin:14px 0;background:#fff}.s1-case h3{font-size:21px;margin:0 0 8px;color:#184c3b}.s1-case p{font-size:18px;line-height:1.95}.s1-options{display:flex;gap:8px;flex-wrap:wrap}.s1-option{border:1px solid #c7dccd;background:#f8fcf9;border-radius:12px;padding:9px 13px;font:inherit;font-size:16px;cursor:pointer}.s1-option:hover{background:#e8f5eb}
+.s1-feedback{display:none;margin-top:10px;padding:12px;border-radius:12px;background:#eef8f1;border-right:4px solid #168353;font-size:16px;line-height:1.9}.s1-feedback.show{display:block}
+.s1-quote{font-size:23px;font-weight:900;color:#164b3a;padding:24px;background:linear-gradient(135deg,#edf7ef,#fff);border-radius:20px;border-right:6px solid #c1a45a;line-height:2}
+.s1-role{display:grid;grid-template-columns:1fr 1fr;gap:14px}.s1-role-card{border-radius:18px;padding:20px;border:1px solid #d8e6dc;background:#fbfefc}.s1-role-card h3{font-size:22px;margin:0 0 8px}.s1-check{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:16px}.s1-check div{background:#eef7f0;border-radius:12px;padding:10px;text-align:center;font-size:14px;font-weight:700}
+.s1-action-table{width:100%;border-collapse:separate;border-spacing:0 8px}.s1-action-table th{font-size:15px;color:#557064;text-align:right}.s1-action-table td{background:#f7fbf8;padding:10px}.s1-action-table input{width:100%;border:1px solid #d0dfd4;border-radius:9px;padding:9px;font:inherit;font-size:15px}
+.s1-pill-row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.s1-pill{background:#edf6ef;border:1px solid #d2e5d6;border-radius:999px;padding:7px 12px;font-size:15px;font-weight:700}
+@media(max-width:900px){.s1-shell{grid-template-columns:1fr;padding:16px}.s1-side{position:relative;top:auto;display:flex;overflow:auto;gap:6px;max-height:none;order:-1}.s1-side-title{display:none}.s1-nav-btn{min-width:145px}.s1-hero h1{font-size:31px}.s1-hero p{font-size:19px}.s1-card-grid,.s1-test-intro,.s1-role{grid-template-columns:1fr}.s1-check{grid-template-columns:1fr 1fr}.s1-panel{padding:20px}.s1-panel-head h2{font-size:26px}}
+</style>
 <meta name="theme-color" content="#006f3e">
 </head>
 <body>
@@ -22,7 +53,7 @@
 const sessions=[
 {id:0,title:"جلسه صفر | هوش مصنوعی کاربردی برای رؤسای شعب",desc:"شروع عملی با ChatGPT؛ ساخت حساب رایگان، مسیر ارتقا، کاربردهای روزمره رئیس شعبه و اصول استفاده امن.",topics:["ChatGPT","AI for Branch Managers","Prompting","Privacy"],goal:"رئیس شعبه با یک مسیر ساده و کاربردی وارد استفاده از هوش مصنوعی شود و بداند کجا، چگونه و با چه ملاحظات محرمانگی از ChatGPT کمک بگیرد.",outline:["هوش مصنوعی برای رئیس شعبه؛ چه کمکی می‌کند و چه کاری را نباید به آن واگذار کرد","ساخت حساب رایگان ChatGPT و شروع کار در chatgpt.com","آشنایی کلی با نسخه رایگان و مسیر ارتقا به پلن‌های پولی متناسب با نیاز","در صورت محدودیت پرداخت: آشنایی با استفاده از واسط پرداخت مانند نامبرلند؛ ترجیح ارتقای حساب شخصی و پرهیز از حساب مشترک یا آماده","کاربردها در شعبه: تهیه پیش‌نویس نامه و پیام، خلاصه‌سازی بخشنامه، گزارش مدیریتی، برنامه جلسه، آموزش و Role Play","کمک به بررسی پرونده‌ها فقط برای خلاصه‌سازی، ساخت Checklist و کشف نکات قابل بررسی؛ تصمیم نهایی با انسان","اصول Prompt نویسی ساده: نقش + مسئله + زمینه + خروجی مورد انتظار","حریم خصوصی و محرمانگی: عدم بارگذاری اطلاعات هویتی، مالی یا پرونده واقعی مشتری بدون مجوز و ناشناس‌سازی","اتصال ChatGPT به ابزارهای کاری مانند Gmail، Google Calendar و Google Drive در صورت دسترسی و اعطای مجوز","تمرین‌های اولیه با سناریوهای فرضی و داده‌های غیرواقعی"]},
 
-{id:1,title:"نقش رئیس شعبه در مدیریت ارتباطات و آداب معاشرت حرفه‌ای",desc:"شناخت ذی‌نفعان، First Impression، Social Etiquette و انتخاب لحن و کانال مناسب.",topics:["Stakeholder Map","First Impression","Social Etiquette","لحن و کانال"],goal:"رئیس شعبه بتواند برای هر ذی‌نفع، سبک ارتباطی و رفتار حرفه‌ای متناسب انتخاب کند.",outline:["نقش رئیس شعبه به‌عنوان نماینده برند","شناخت ذی‌نفعان اصلی شعبه","آداب معرفی، سلام و احوالپرسی","اولین برداشت و حضور حرفه‌ای","انتخاب لحن، زمان و کانال مناسب"]},
+{id:1,title:"نقش رئیس شعبه در مدیریت ارتباطات و آداب معاشرت حرفه‌ای",desc:"Professional Presence، First Impression، Warmth × Competence و آغاز متناسب ارتباط در کانتکست شعب بیمه البرز.",topics:["Professional Presence","Warmth × Competence","First Impression","Stakeholder Intelligence"],goal:"رئیس شعبه بتواند مخاطب و موقعیت را تشخیص دهد و ارتباط حرفه‌ای را با ترکیب مناسب احترام، گرمی و شایستگی آغاز کند.",outline:["حضور حرفه‌ای رئیس شعبه","ماتریس گرمی × شایستگی","هوشمندی ذی‌نفعان","اولین برداشت و Signalها","فاصله و آداب حرفه‌ای","سناریو، Role Play و Action Plan"]},
 {id:2,title:"تشریفات و Protocol برای رؤسای شعب",desc:"اصول میزبانی، تقدم، معرفی، نشستن و مدیریت بازدیدهای رسمی.",topics:["Protocol","Hosting","Seating","VIP Visit"],goal:"رئیس شعبه بتواند موقعیت‌های رسمی و بازدیدهای مهم را حرفه‌ای و منظم مدیریت کند.",outline:["تفاوت Etiquette و Protocol","استقبال و بدرقه","تقدم و معرفی افراد","نحوه نشستن در جلسات","اصول میزبانی و پذیرایی","آمادگی شعبه برای بازدید رسمی"]},
 {id:3,title:"گوش‌دادن فعال، پرسشگری و همدلی حرفه‌ای",desc:"فهم درست مسئله قبل از پاسخ‌دادن و راه‌حل ارائه‌کردن.",topics:["Active Listening","Questioning","Empathy","Clarification"],goal:"رئیس شعبه بتواند با گوش‌دادن و پرسشگری، مسئله و نیاز واقعی مخاطب را بهتر درک کند.",outline:["شنیدن در برابر گوش‌دادن فعال","سؤال‌های باز و بسته","سؤال‌های روشن‌کننده و عمیق‌کننده","Reflecting Back و Summarizing","همدلی حرفه‌ای"]},
 {id:4,title:"فن بیان مدیریتی، لحن و زبان بدن",desc:"ساخت پیام روشن، مدیریت لحن و استفاده آگاهانه از نشانه‌های غیرکلامی.",topics:["Voice","Tone","Body Language","Executive Presence"],goal:"رئیس شعبه بتواند پیام خود را روشن، کوتاه و متناسب با موقعیت منتقل کند.",outline:["وضوح و اختصار در پیام مدیریتی","Voice, Tone & Pace","تماس چشمی و حالات چهره","Posture و Gesture","هماهنگی کلام و رفتار","حضور حرفه‌ای"]},
@@ -168,7 +199,109 @@ document.getElementById("app").innerHTML=header()+
 '</div></section></main>'+footer();
 }
 
+
+const session1Sections=[
+ {id:"start",icon:"🏁",label:"شروع جلسه",sub:"هدف و Warm-up"},
+ {id:"position",icon:"🧭",label:"تست من",sub:"Warmth × Competence"},
+ {id:"presence",icon:"👔",label:"حضور حرفه‌ای",sub:"Professional Presence"},
+ {id:"matrix",icon:"⚖️",label:"گرمی × شایستگی",sub:"مدل علمی"},
+ {id:"stakeholders",icon:"🕸️",label:"ذی‌نفعان",sub:"Stakeholder Intelligence"},
+ {id:"impression",icon:"👁️",label:"اولین برداشت",sub:"First Impression"},
+ {id:"etiquette",icon:"🤝",label:"آداب حرفه‌ای",sub:"Professional Distance"},
+ {id:"cases",icon:"🎭",label:"سناریوها",sub:"Case Lab"},
+ {id:"roleplay",icon:"👥",label:"Role Play",sub:"تمرین دو نفره"},
+ {id:"action",icon:"✅",label:"جمع‌بندی",sub:"Action Plan"}
+];
+
+const s1Questions=[
+ {d:"w",t:"هنگام ورود فرد به فضای کاری‌ام، حتی اگر مشغول باشم، حضور او را به‌گونه‌ای حرفه‌ای به رسمیت می‌شناسم."},
+ {d:"w",t:"مخاطب در ابتدای گفت‌وگو احساس می‌کند برای مسئله و زمان او احترام قائلم."},
+ {d:"w",t:"لحن و سطح صمیمیت خود را متناسب با مشتری، کارمند، نماینده یا مدیر ستادی تنظیم می‌کنم."},
+ {d:"w",t:"حتی زمانی که پاسخ فوری ندارم، ارتباطم باعث نمی‌شود مخاطب احساس کند مسئله او برای من بی‌اهمیت است."},
+ {d:"w",t:"در برخورد اولیه، قبل از ورود مستقیم به فرآیند و مقررات، یک ارتباط انسانی و حرفه‌ای ایجاد می‌کنم."},
+ {d:"c",t:"در شروع گفت‌وگو می‌توانم موضوع را سریع تشخیص دهم و مسیر تعامل را روشن کنم."},
+ {d:"c",t:"حتی وقتی پاسخ نهایی در اختیار من نیست، با آرامش توضیح می‌دهم چه اقدامی انجام خواهد شد و مرحله بعد چیست."},
+ {d:"c",t:"در موقعیت‌های هم‌زمان و فشرده، مخاطبان احساس نمی‌کنند کنترل شرایط از دست من خارج شده است."},
+ {d:"c",t:"در گفت‌وگوهای اولیه، از توضیحات مبهم، دفاعی یا انتقال مسئولیت به دیگران پرهیز می‌کنم."},
+ {d:"c",t:"مخاطب پس از چند دقیقه تعامل با من معمولاً می‌داند الان چه اتفاقی می‌افتد و قدم بعدی چیست."}
+];
+
+function s1SectionHtml(id){
+ if(id==="start") return '<div class="s1-panel-head"><div class="bigico">🏁</div><div><h2>شروع جلسه</h2><p>فعال‌سازی ذهنی و تعریف مسئله</p></div></div>'+
+ '<div class="s1-question">«مخاطب در چند دقیقه اول چه برداشتی از شما و از بیمه البرز می‌سازد؟»</div>'+
+ '<div class="s1-pill-row"><span class="s1-pill">⏱ ۱۲۰ دقیقه</span><span class="s1-pill">💬 آنلاین و تعاملی</span><span class="s1-pill">🎯 رؤسای شعب بیمه البرز</span><span class="s1-pill">🧩 سطح متوسط رو به بالا</span></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><span class="mini-emoji">🎯</span><h3>هدف جلسه</h3><p>رئیس شعبه بتواند جایگاه ارتباطی خود را بشناسد، مخاطب و موقعیت را تشخیص دهد و یک ارتباط حرفه‌ای را از همان لحظه اول با ترکیب مناسبِ احترام، گرمی و شایستگی آغاز کند.</p></div>'+
+ '<div class="s1-card s1-accent"><span class="mini-emoji">💡</span><h3>Warm-up کلاس</h3><p><b>در ۳۰ ثانیه اول برخورد با یک رئیس شعبه، چه چیزهایی بیشترین اثر را بر قضاوت شما می‌گذارند؟</b><br>شرکت‌کنندگان سه کلمه در Chat می‌نویسند؛ مدرس پاسخ‌ها را به First Impression و Professional Presence متصل می‌کند.</p></div></div>'+
+ '<div class="s1-callout"><b>اصل طراحی جلسه:</b> Teach → Try → Discuss → Apply. هیچ بخش آموزشی طولانی بدون فعالیت یا گفت‌وگوی مشارکتی ادامه پیدا نمی‌کند.</div>';
+
+ if(id==="position") return '<div class="s1-panel-head"><div class="bigico">🧭</div><div><h2>تست من | موقعیت ارتباطی</h2><p>Self-Assessment قبل از ورود به آموزش</p></div></div>'+
+ '<div class="s1-test-intro"><div class="s1-card"><h3>⚖️ ماتریس Warmth × Competence</h3><p>۱۰ عبارت را از ۱ تا ۵ امتیاز دهید. هدف تشخیص «الگوی غالب فعلی» است، نه برچسب‌زدن شخصیت.</p></div><div class="s1-target"><label>چه کسی را ارزیابی می‌کنید؟</label><select id="s1-target"><option>خودم به‌عنوان رئیس شعبه</option><option>کارکنان شعبه من، به‌طور کلی</option><option>رؤسای شعب بیمه البرز، به‌صورت کلی</option></select></div></div>'+
+ '<div id="s1-questions">'+s1Questions.map((q,i)=>'<div class="s1-q"><div class="s1-q-title">'+(i+1)+'. '+q.t+'</div><div class="s1-scale">'+[1,2,3,4,5].map(v=>'<label><input type="radio" name="s1q'+i+'" value="'+v+'"> '+v+'</label>').join('')+'</div></div>').join('')+'</div>'+
+ '<button class="s1-submit" onclick="scoreS1()">📍 جایگاه من را روی ماتریس نشان بده</button>'+
+ '<div id="s1-result" class="s1-result"><div class="s1-scores"><div class="s1-score"><b id="s1-wscore">—</b><span>گرمی ارتباطی / ۵</span></div><div class="s1-score"><b id="s1-cscore">—</b><span>شایستگی ادراک‌شده / ۵</span></div></div>'+
+ '<div class="s1-matrix" id="s1-matrix"><div class="s1-cell"><b>🌟 حضور ارتباطی حرفه‌ای</b><span>گرم + مسلط</span></div><div class="s1-cell"><b>🧊 مسلط اما سرد</b><span>شایستگی بالا، گرمی پایین</span></div><div class="s1-cell"><b>😊 خوش‌برخورد اما کم‌اثر</b><span>گرمی بالا، شایستگی پایین</span></div><div class="s1-cell"><b>⚠️ ارتباط کم‌اعتماد</b><span>هر دو بعد نیازمند توسعه</span></div><div id="s1-dot" class="s1-dot"></div></div><div class="s1-axis-x">← شایستگی پایین &nbsp;&nbsp;&nbsp; شایستگی ادراک‌شده &nbsp;&nbsp;&nbsp; شایستگی بالا →</div><div id="s1-profile" class="s1-callout"></div></div>';
+
+ if(id==="presence") return '<div class="s1-panel-head"><div class="bigico">👔</div><div><h2>حضور حرفه‌ای رئیس شعبه</h2><p>Professional Presence = مدیریت Signalها</p></div></div>'+
+ '<div class="s1-quote">رئیس شعبه قبل از اینکه حرف بزند، پیام فرستاده است.</div>'+
+ '<div class="s1-card-grid" style="margin-top:18px">'+
+ '<div class="s1-card"><span class="mini-emoji">🤍</span><h3>اعتماد</h3><p>«موضوع شما برای من مهم است.» حتی اگر پاسخ نهایی هنوز در اختیار شعبه نباشد.</p></div>'+
+ '<div class="s1-card"><span class="mini-emoji">🧠</span><h3>شایستگی</h3><p>«مسیر را می‌شناسم و می‌توانم قدم بعد را روشن کنم.»</p></div>'+
+ '<div class="s1-card"><span class="mini-emoji">🙏</span><h3>احترام</h3><p>شأن، زمان، عنوان و موقعیت مشتری، نماینده، همکار یا مدیر ستادی دیده می‌شود.</p></div>'+
+ '<div class="s1-card"><span class="mini-emoji">🎛️</span><h3>کنترل موقعیت</h3><p>در شلوغی شعبه، فشار مشتری و تماس ستاد، آرامش و نظم تعامل حفظ می‌شود.</p></div></div>'+
+ '<div class="s1-callout"><b>Context بیمه البرز:</b> رئیس شعبه فقط خودش را نمایندگی نمی‌کند؛ هر Signal رفتاری او می‌تواند به برداشت مخاطب از «بیمه البرز» تبدیل شود.</div>';
+
+ if(id==="matrix") return '<div class="s1-panel-head"><div class="bigico">⚖️</div><div><h2>گرمی × شایستگی</h2><p>Warmth × Competence</p></div></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><h3>🔥 Warmth</h3><p>آیا مخاطب احساس می‌کند نیت شما نسبت به او مثبت، محترمانه و قابل اعتماد است؟</p></div><div class="s1-card"><h3>🎯 Competence</h3><p>آیا مخاطب احساس می‌کند شما توانایی، تسلط و قدرت هدایت وضعیت را دارید؟</p></div></div>'+
+ '<div class="s1-callout"><b>نکته حرفه‌ای:</b> هدف «خیلی گرم بودن» در همه موقعیت‌ها نیست؛ هدف <b>High Competence + Context-Appropriate Warmth</b> است.</div>'+
+ '<div class="s1-case"><h3>🧩 تشخیص خانه ماتریس</h3><p>رئیس شعبه بسیار خوش‌برخورد است، اما وقتی مشتری درباره مرحله بعد پرونده سؤال می‌کند، پاسخ‌ها مبهم است و چندبار می‌گوید «دست من نیست».</p><div class="s1-options"><button class="s1-option" onclick="s1Feedback(this,false)">حضور حرفه‌ای</button><button class="s1-option" onclick="s1Feedback(this,true)">خوش‌برخورد اما کم‌اثر</button><button class="s1-option" onclick="s1Feedback(this,false)">مسلط اما سرد</button></div><div class="s1-feedback">✅ درست است. Warmth بالا دیده می‌شود، اما Competence Signal ضعیف است؛ مسئله «خوش‌اخلاقی» نیست، بلکه روشن‌کردن مسیر و قدم بعد است.</div></div>';
+
+ if(id==="stakeholders") return '<div class="s1-panel-head"><div class="bigico">🕸️</div><div><h2>هوشمندی ذی‌نفعان شعبه</h2><p>Stakeholder Intelligence</p></div></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><h3>👤 مشتری</h3><p>انتظار اولیه: دیده‌شدن، وضوح مسیر و احترام به زمان.</p></div><div class="s1-card"><h3>🤝 نماینده</h3><p>انتظار اولیه: رابطه حرفه‌ای، دسترسی منطقی و مرزبندی روشن.</p></div><div class="s1-card"><h3>👥 کارکنان</h3><p>انتظار اولیه: حضور قابل اتکا، شأن حرفه‌ای و ثبات رفتاری.</p></div><div class="s1-card"><h3>🏢 ستاد</h3><p>انتظار اولیه: اختصار، تسلط، پاسخ‌گویی و ارتباط سازمانی.</p></div><div class="s1-card"><h3>🏦 مشتری سازمانی</h3><p>انتظار اولیه: اعتبار، آمادگی و Orientation به نتیجه.</p></div><div class="s1-card"><h3>🔗 سایر شعب</h3><p>انتظار اولیه: همکاری حرفه‌ای و وضوح در مسئولیت.</p></div></div>'+
+ '<div class="s1-case"><h3>⏱ سناریوی Power × Legitimacy × Urgency</h3><p>هم‌زمان یک مشتری سازمانی بدون وقت قبلی وارد شده، نماینده باسابقه منتظر است، کارمند می‌گوید یک پرونده فوری نیاز به تصمیم شما دارد و مدیر ستادی تماس گرفته است. «اولویت» را فقط با جایگاه سازمانی تعیین نکنید؛ قدرت، مشروعیت و فوریت را با هم ببینید.</p></div>';
+
+ if(id==="impression") return '<div class="s1-panel-head"><div class="bigico">👁️</div><div><h2>اولین برداشت</h2><p>First Impression & Cues</p></div></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><span class="mini-emoji">🚪</span><h3>۱. ورود مخاطب</h3><p>آیا حضور او دیده و Recognize می‌شود؟</p></div><div class="s1-card"><span class="mini-emoji">👀</span><h3>۲. اولین نگاه</h3><p>نگاه شما «دیدمت» می‌گوید یا «مزاحم شدی»؟</p></div><div class="s1-card"><span class="mini-emoji">💬</span><h3>۳. اولین جمله</h3><p>«بله؟» و «سلام، خوش آمدید؛ بفرمایید» یک Signal واحد نیستند.</p></div><div class="s1-card"><span class="mini-emoji">🪑</span><h3>۴. اولین رفتار</h3><p>ایستادن، نشستن، قطع یا ادامه تماس، معرفی و دعوت به نشستن.</p></div></div>'+
+ '<div class="s1-case"><h3>🎮 کدام شروع حرفه‌ای‌تر است؟</h3><p>رئیس شعبه در تماس تلفنی است و مشتری وارد می‌شود.</p><div class="s1-options"><button class="s1-option" onclick="s1Feedback(this,false)">مشتری را تا پایان تماس نادیده بگیرد</button><button class="s1-option" onclick="s1Feedback(this,true)">با تماس چشمی و اشاره کوتاه حضور او را به رسمیت بشناسد</button><button class="s1-option" onclick="s1Feedback(this,false)">تماس را ناگهانی قطع کند</button></div><div class="s1-feedback">✅ Recognition بدون بی‌احترامی به تماس جاری، Signal حرفه‌ای‌تری است. هدف «مدیریت موقعیت» است، نه واکنش افراطی.</div></div>';
+
+ if(id==="etiquette") return '<div class="s1-panel-head"><div class="bigico">🤝</div><div><h2>آداب حرفه‌ای و فاصله مناسب</h2><p>Professional Distance</p></div></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><span class="mini-emoji">🧊</span><h3>Over-formality</h3><p>رسمیت افراطی می‌تواند مدیر را سرد، سلسله‌مراتبی و دور از دسترس نشان دهد.</p></div><div class="s1-card"><span class="mini-emoji">😄</span><h3>Over-familiarity</h3><p>صمیمیت افراطی مرز نقش‌ها، عدالت ادراک‌شده و اعتبار مدیریتی را تضعیف می‌کند.</p></div></div>'+
+ '<div class="s1-quote" style="margin-top:16px">گرم، اما نه خودمانی؛ محترمانه، اما نه متکلف؛ قاطع، اما نه آمرانه.</div>'+
+ '<div class="s1-case"><h3>💬 سه جمله، سه Signal</h3><p>۱) «جناب مهندس، اگر اجازه بدید…» در هر جمله ← Formality Overload<br>۲) «داداش حالا درستش می‌کنیم…» ← Excessive Familiarity<br>۳) «متوجه موضوع شدم. اجازه بدهید دقیق بررسی کنیم چه کاری از شعبه قابل انجام است.» ← Professional Distance</p></div>';
+
+ if(id==="cases") return '<div class="s1-panel-head"><div class="bigico">🎭</div><div><h2>آزمایشگاه سناریوها</h2><p>Case Lab | پاسخ‌های غیر بدیهی</p></div></div>'+
+ '<div class="s1-case"><h3>🏢 سناریو ۱ | مشتری مهم یا عدالت ارتباطی؟</h3><p>در حال صحبت با یک مشتری عادی هستید. مدیرعامل یک شرکت بزرگ وارد می‌شود. آیا مکالمه را قطع می‌کنید؟ بحث: Status Bias، Courtesy و Fairness.</p></div>'+
+ '<div class="s1-case"><h3>🤝 سناریو ۲ | نماینده باسابقه</h3><p>نماینده قدیمی بدون اجازه می‌نشیند و شما را با نام کوچک خطاب می‌کند. چگونه Professional Boundary را بدون تخریب رابطه حفظ می‌کنید؟</p></div>'+
+ '<div class="s1-case"><h3>🏛️ سناریو ۳ | مدیر ستادی</h3><p>مدیر ستادی جلوی کارکنان از یک ایراد شعبه انتقاد می‌کند. در ۳۰ ثانیه اول چه Positioning حرفه‌ای مناسب است؟ اینجا وارد حل تعارض نمی‌شویم.</p></div>'+
+ '<div class="s1-case"><h3>🧑‍💼 سناریو ۴ | کارمند جدید</h3><p>گفتن «ایشون تازه اومدن، فعلاً دارن یاد می‌گیرن» چه Signalی برای مشتری و کارمند می‌فرستد؟ چگونه معرفی را بازطراحی می‌کنید؟</p></div>';
+
+ if(id==="roleplay") return '<div class="s1-panel-head"><div class="bigico">👥</div><div><h2>Role Play دو نفره</h2><p>Reading the Room + Professional Opening</p></div></div>'+
+ '<div class="s1-role"><div class="s1-role-card"><h3>🎩 Role A | رئیس شعبه</h3><p>هدف شما حل کامل مسئله نیست. باید مخاطب را بخوانید، Signal مناسب بفرستید و ارتباط را حرفه‌ای آغاز کنید.</p></div><div class="s1-role-card"><h3>🎭 Role B | مخاطب</h3><p><b>Hidden Instruction:</b> نماینده ناراحت است اما مستقیم اعتراض نمی‌کند؛ یا مشتری سازمانی عجله دارد اما نمی‌خواهد بی‌ادب به نظر برسد.</p></div></div>'+
+ '<div class="s1-callout"><b>روش اجرا:</b> ۳ دقیقه نقش‌آفرینی → ۲ دقیقه Feedback → تعویض نقش. مناسب Breakout Room کلاس آنلاین.</div>'+
+ '<div class="s1-check"><div>👁 Recognition<br>۰–۲</div><div>🔥 Warmth<br>۰–۲</div><div>🎯 Competence<br>۰–۲</div><div>🤝 Distance<br>۰–۲</div><div>🧩 Context Fit<br>۰–۲</div></div>'+
+ '<div class="s1-quote" style="margin-top:16px;text-align:center">Communication Opening Score = 10</div>';
+
+ if(id==="action") return '<div class="s1-panel-head"><div class="bigico">✅</div><div><h2>جمع‌بندی و انتقال یادگیری</h2><p>از کلاس به رفتار واقعی شعبه</p></div></div>'+
+ '<div class="s1-card-grid"><div class="s1-card"><h3>💬 پیام ۱</h3><p>رئیس شعبه قبل از اینکه مسئله را حل کند، باید رابطه را درست آغاز کند.</p></div><div class="s1-card"><h3>⚖️ پیام ۲</h3><p>گرمی بدون شایستگی اعتماد پایدار نمی‌سازد؛ شایستگی بدون گرمی فاصله ایجاد می‌کند.</p></div><div class="s1-card"><h3>🧩 پیام ۳</h3><p>یک مدیر حرفه‌ای با همه یکسان رفتار نمی‌کند؛ با همه منصفانه و متناسب رفتار می‌کند.</p></div><div class="s1-card"><h3>🎯 پیام ۴</h3><p>Professional Etiquette یعنی مدیریت آگاهانه احترام، فاصله و Context؛ نه مجموعه‌ای از تعارفات.</p></div></div>'+
+ '<h3 style="font-size:23px;color:#174d3c;margin-top:24px">✍️ Communication Audit شخصی</h3>'+
+ '<table class="s1-action-table"><thead><tr><th>موقعیت</th><th>مخاطب</th><th>Signal فعلی</th><th>Signal مطلوب</th><th>رفتار جدید</th></tr></thead><tbody>'+[1,2,3].map(()=>'<tr><td><input placeholder="مثلاً ورود نماینده"></td><td><input placeholder="نماینده"></td><td><input placeholder="مثلاً عجله"></td><td><input placeholder="احترام + کنترل"></td><td><input placeholder="رفتار مشخص"></td></tr>').join('')+'</tbody></table>'+
+ '<div class="s1-question" style="margin-top:18px">از فردا فقط یک رفتار ارتباطی را تغییر می‌دهم: ____________</div>';
+
+ return "";
+}
+
+function session1Page(){
+ document.title="جلسه اول | نقش رئیس شعبه در مدیریت ارتباطات";
+ const nav=session1Sections.map((x,i)=>'<button class="s1-nav-btn '+(i===0?'active':'')+'" data-s1="'+x.id+'" onclick="openS1(\''+x.id+'\',this)"><span class="ico">'+x.icon+'</span><span>'+x.label+'<small style="display:block;font-size:11px;font-weight:500;opacity:.75">'+x.sub+'</small></span></button>').join("");
+ document.getElementById("app").innerHTML=header()+
+ '<main><div class="s1-shell"><section class="s1-main"><div class="s1-hero"><span class="s1-eyebrow">🌟 جلسه اول | آکادمی ارتباطات رؤسای شعب</span><h1>نقش رئیس شعبه در مدیریت ارتباطات و آداب معاشرت حرفه‌ای</h1><p>یک کارگاه دو ساعته، تعاملی و سناریومحور برای رؤسای شعب بیمه البرز؛ با تمرکز بر Professional Presence، First Impression، Warmth × Competence و Contextual Communication.</p><div class="s1-meta"><span>⏱ ۲ ساعت</span><span>🎯 رؤسای شعب بیمه البرز</span><span>💻 Online Workshop</span><span>🎭 Case + Role Play + Game</span></div></div><section class="s1-panel" id="s1-content">'+s1SectionHtml("start")+'</section></section>'+
+ '<aside class="s1-side"><div class="s1-side-title">مسیر جلسه اول</div>'+nav+'</aside></div></main>'+footer();
+}
+function openS1(id,btn){document.getElementById("s1-content").innerHTML=s1SectionHtml(id);document.querySelectorAll(".s1-nav-btn").forEach(b=>b.classList.remove("active"));if(btn)btn.classList.add("active");window.scrollTo({top:0,behavior:"smooth"});}
+function s1Feedback(btn,correct){const box=btn.closest(".s1-case");const fb=box.querySelector(".s1-feedback");box.querySelectorAll(".s1-option").forEach(b=>{b.style.opacity=".55";b.style.borderColor="#c7dccd"});btn.style.opacity="1";btn.style.borderColor=correct?"#168353":"#cf654f";fb.innerHTML=correct?fb.innerHTML:"↩️ این گزینه قابل دفاع است، اما بهترین Signal را نمی‌فرستد. دوباره Context، احترام و کنترل موقعیت را هم‌زمان ببینید.";fb.classList.add("show");}
+function scoreS1(){let w=0,c=0,wc=0,cc=0,missing=0;s1Questions.forEach((q,i)=>{const el=document.querySelector('input[name="s1q'+i+'"]:checked');if(!el){missing++;return}const v=Number(el.value);if(q.d==="w"){w+=v;wc++}else{c+=v;cc++}});if(missing){alert("لطفاً به هر ۱۰ عبارت پاسخ دهید.");return}w=w/wc;c=c/cc;document.getElementById("s1-wscore").textContent=w.toFixed(1);document.getElementById("s1-cscore").textContent=c.toFixed(1);const dot=document.getElementById("s1-dot");dot.style.right=((c-1)/4*92+3)+"%";dot.style.bottom=((w-1)/4*92+3)+"%";let profile="",focus="";if(w>=3&&c>=3){profile="🌟 الگوی غالب: حضور ارتباطی حرفه‌ای";focus="تمرکز توسعه: حفظ این تعادل در موقعیت‌های پرفشار و با ذی‌نفعان متفاوت."}else if(w>=3){profile="😊 الگوی غالب: خوش‌برخورد اما نیازمند تقویت Competence Signal";focus="تمرکز توسعه: روشن‌کردن مسیر، قدم بعد و مالکیت ارتباط."}else if(c>=3){profile="🧊 الگوی غالب: مسلط اما نسبتاً سرد";focus="تمرکز توسعه: Recognition، Warm Opening و توجه آشکار به تجربه مخاطب."}else{profile="⚠️ الگوی غالب: ارتباط کم‌اعتماد";focus="تمرکز توسعه: ابتدا ثبات رفتاری و وضوح، سپس گرمی و شخصی‌سازی ارتباط."}document.getElementById("s1-profile").innerHTML="<b>"+profile+"</b><br>"+focus+"<br><small>این نتیجه خودارزیابی است، نه آزمون شخصیت یا ارزیابی رسمی.</small>";document.getElementById("s1-result").classList.add("show");}
+
 function sessionPage(id){
+if(id===1){session1Page();return}
 const s=sessions.find(x=>x.id===id); if(!s){home();return}
 document.title='جلسه '+id+' | '+s.title;
 document.getElementById("app").innerHTML=header()+
