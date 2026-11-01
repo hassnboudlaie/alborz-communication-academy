@@ -1,10 +1,10 @@
 {
-  "id": "/alborz-communication-academy/?app=alborz-communication-standalone-20261101",
+  "id": "./?app=alborz-communication-origin-isolated-v1",
   "name": "آکادمی ارتباطات اثربخش بیمه البرز",
   "short_name": "آکادمی البرز",
   "description": "اپلیکیشن مستقل و قابل نصب آکادمی مهارت‌های ارتباطی رؤسای شعب بیمه البرز؛ متصل به محتوای اصلی و زنده وب‌سایت.",
-  "start_url": "/alborz-communication-academy/?app=alborz-communication-standalone-20261101",
-  "scope": "/alborz-communication-academy/",
+  "start_url": "./?app=alborz-communication-origin-isolated-v1",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#07593e",
   "background_color": "#f3f7f4",
