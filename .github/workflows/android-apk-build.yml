@@ -1,0 +1,58 @@
+name: Alborz Native Android APK - build and release
+on:
+  push:
+    branches: [main, feat/android-standalone-apk-20261102]
+    paths:
+      - 'android/**'
+      - '.github/workflows/android-apk-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apk:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install required Android SDK packages
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Prepare Alborz app icon from dedicated PWA asset
+        run: |
+          mkdir -p android/app/src/main/res/drawable-nodpi
+          cp icon-512.png android/app/src/main/res/drawable-nodpi/app_icon.png
+      - name: Build non-debuggable Android APK with unique package identifier
+        run: gradle -p android --no-daemon --stacktrace assembleRelease
+      - name: Verify Android package, permissions, signature and web target
+        run: |
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          test -s "$APK"
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | head -n 25
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose "$APK"
+          grep -Fq 'ir.hasanboudlaie.alborz.communicationacademy' android/app/build.gradle
+          grep -Fq 'https://hassnboudlaie.github.io/hasan-boudlaie/alborz-communication-skills/' android/app/src/main/java/ir/hasanboudlaie/alborz/communicationacademy/MainActivity.java
+      - uses: actions/upload-artifact@v4
+        with:
+          name: alborz-android-standalone-pilot-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
+      - name: Publish pilot APK as public GitHub Release
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="alborz-android-v0.1.0-pilot"
+          apk="android/app/build/outputs/apk/release/app-release.apk"
+          notes="Pilot APK with a unique Android package ID (ir.hasanboudlaie.alborz.communicationacademy); opens the live canonical Alborz Communication Academy. Not a Chrome PWA. Internet is required. Signed for internal pilot by CI ephemeral debug key; not suitable for production updates until a permanent signing key is configured. Never uninstall other apps to test."
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release already exists; not overwriting APK signed with an older key."
+          else
+            gh release create "$tag" "$apk#Alborz-Communication-Academy-Android-pilot.apk" --title "Alborz Academy Android Pilot v0.1.0" --notes "$notes" --prerelease
+          fi
