@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+android {
+  namespace 'ir.hasanboudlaie.alborz.communicationacademy'
+  compileSdk 35
+  defaultConfig {
+    applicationId 'ir.hasanboudlaie.alborz.communicationacademy'
+    minSdk 26
+    targetSdk 35
+    versionCode 1
+    versionName '0.1.0'
+  }
+  buildTypes {
+    release {
+      // Pilot key generated during CI; not a production/update signing identity.
+      // This is non-debuggable, unlike an assembleDebug APK.
+      signingConfig signingConfigs.debug
+      minifyEnabled false
+      shrinkResources false
+    }
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
+  }
+}
